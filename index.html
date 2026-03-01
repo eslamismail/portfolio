@@ -1,265 +1,473 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eslam Mohamed Ismail | Senior Full Stack & DevOps Engineer</title>
-    <meta name="description" content="Portfolio of Eslam Mohamed Ismail, a Senior Full Stack & DevOps Engineer with 6+ years of experience in building scalable web applications and CI/CD pipelines.">
+    <meta
+      name="description"
+      content="Portfolio of Eslam Mohamed Ismail, a Senior Full Stack & DevOps Engineer with 6+ years of experience in building scalable web applications and CI/CD pipelines."
+    />
+    <meta
+      name="keywords"
+      content="Senior Full Stack Engineer, DevOps Engineer, PHP, Laravel, Node.js, Vue.js, Docker, CI/CD, Riyadh, Saudi Arabia"
+    />
+
+    <!-- OpenGraph for Professional Sharing -->
+    <meta
+      property="og:title"
+      content="Eslam Mohamed Ismail | Senior Full Stack & DevOps Engineer"
+    />
+    <meta
+      property="og:description"
+      content="6+ years experience in Laravel, Vue.js, Node.js, and Docker. Building scalable web systems."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://eslamismail.github.io/portfolio/"
+    />
+
+    <!-- Structured Data (JSON-LD) for ATS & Search Engines -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Eslam Mohamed Ismail",
+        "jobTitle": "Senior Full Stack & DevOps Engineer",
+        "url": "https://eslamismail.github.io/portfolio/",
+        "sameAs": ["https://www.linkedin.com/in/eslam-ismail-93/"],
+        "knowsAbout": [
+          "PHP",
+          "Laravel",
+          "Node.js",
+          "Vue.js",
+          "Docker",
+          "DevOps",
+          "CI/CD",
+          "NGINX",
+          "PostgreSQL",
+          "MongoDB"
+        ],
+        "description": "Senior Full Stack & DevOps Engineer with 6+ years of experience in building scalable web applications and CI/CD pipelines.",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Wakeb Data"
+        }
+      }
+    </script>
+
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body class="dark-theme">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="dark-theme">
     <div class="cursor-glow"></div>
-    
-    <nav class="glass-nav">
-        <div class="nav-container">
-            <a href="#" class="logo">EMI<span>.</span></a>
-            <ul class="nav-links">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="nav-cta">
-                <a href="mailto:eslam.ismail93@gmail.com" class="btn-outline">Hire Me</a>
-            </div>
+
+    <nav class="glass-nav" role="navigation" aria-label="Main Navigation">
+      <div class="nav-container">
+        <a href="#" class="logo" aria-label="EMI Home">EMI<span>.</span></a>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a
+            href="mailto:eslam.ismail93@gmail.com"
+            class="btn-outline"
+            aria-label="Hire Eslam"
+            >Hire Me</a
+          >
         </div>
+      </div>
     </nav>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero-section">
-            <div class="container grid-hero">
-                <div class="hero-content">
-                    <h2 class="reveal">Hello, I'm</h2>
-                    <h1 class="reveal">Eslam Mohamed <span class="accent">Ismail</span></h1>
-                    <h3 class="reveal">Senior Full Stack Engineer | DevOps & SRE</h3>
-                    <p class="reveal">Results-driven engineer with 6+ years of experience in building scalable web applications, dashboards, and high-performance backend systems. Specializing in Laravel, Vue.js, Node.js, and Docker.</p>
-                    <div class="hero-btns reveal">
-                        <a href="#projects" class="btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
-                        <a href="#contact" class="btn-secondary">Let's Talk</a>
-                    </div>
-                </div>
-                <div class="hero-visual reveal">
-                    <div class="shape-blob"></div>
-                    <div class="hero-card glass">
-                        <div class="code-header">
-                            <span class="dot red"></span>
-                            <span class="dot yellow"></span>
-                            <span class="dot green"></span>
-                        </div>
-                        <div class="code-content">
-                            <pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+    <main id="main-content" role="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero-section" aria-labelledby="hero-title">
+        <div class="container grid-hero">
+          <div class="hero-content">
+            <h2 class="reveal">Hello, I'm</h2>
+            <h1 id="hero-title" class="reveal">
+              Eslam Mohamed <span class="accent">Ismail</span>
+            </h1>
+            <h3 class="reveal">Senior Full Stack Engineer | DevOps & SRE</h3>
+            <p class="reveal">
+              Results-driven engineer with 6+ years of experience in building
+              scalable web applications, dashboards, and high-performance
+              backend systems. Specializing in Laravel, Vue.js, Node.js, and
+              Docker.
+            </p>
+            <div class="hero-btns reveal">
+              <a
+                href="#projects"
+                class="btn-primary"
+                aria-label="View Eslam's Projects"
+                >View My Work <i class="fas fa-arrow-right"></i
+              ></a>
+              <a href="#contact" class="btn-secondary">Let's Talk</a>
+            </div>
+          </div>
+          <div class="hero-visual reveal" aria-hidden="true">
+            <div class="shape-blob"></div>
+            <div class="hero-card glass">
+              <div class="code-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="code-content">
+                <pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
   <span class="property">name</span>: <span class="string">'Eslam Ismail'</span>,
   <span class="property">role</span>: <span class="string">'Full Stack'</span>,
   <span class="property">experience</span>: <span class="number">6</span>,
   <span class="property">passion</span>: <span class="string">'Scalable Systems'</span>
 };</code></pre>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section class="stats-section reveal">
-            <div class="container grid-stats">
-                <div class="stat-item reveal-child">
-                    <span class="stat-number">6+</span>
-                    <span class="stat-label">Years Experience</span>
-                </div>
-                <div class="stat-item reveal-child">
-                    <span class="stat-number">50+</span>
-                    <span class="stat-label">Projects Completed</span>
-                </div>
-                <div class="stat-item reveal-child">
-                    <span class="stat-number">10+</span>
-                    <span class="stat-label">Tech Stack Mastered</span>
-                </div>
-            </div>
-        </section>
+      <!-- Stats Counter Section -->
+      <section
+        class="stats-section reveal"
+        aria-label="Professional Statistics"
+      >
+        <div class="container grid-stats">
+          <div class="stat-item reveal-child">
+            <span class="stat-number">6+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-item reveal-child">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-item reveal-child">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Tech Stack Mastered</span>
+          </div>
+        </div>
+      </section>
 
-        <!-- Technical Skills Section -->
-        <section id="skills" class="skills-section">
-            <div class="container">
-                <div class="section-header reveal">
-                    <h2>Technical <span class="accent">Skills</span></h2>
-                    <p>My toolkit for building high-performance systems.</p>
-                </div>
-                <div class="skills-grid reveal">
-                    <div class="skill-category reveal-child">
-                        <h3><i class="fas fa-code"></i> Frontend</h3>
-                        <div class="skill-tags">
-                            <span>HTML/CSS</span><span>Bootstrap</span><span>JavaScript</span><span>jQuery</span><span>Vue.js</span><span>Nuxt.js</span><span>React.js</span><span>Next.js</span>
-                        </div>
-                    </div>
-                    <div class="skill-category reveal-child">
-                        <h3><i class="fas fa-server"></i> Backend</h3>
-                        <div class="skill-tags">
-                            <span>PHP</span><span>Laravel</span><span>Node.js</span><span>GraphQL</span><span>RESTful APIs</span><span>Socket.IO</span>
-                        </div>
-                    </div>
-                    <div class="skill-category reveal-child">
-                        <h3><i class="fas fa-database"></i> Databases</h3>
-                        <div class="skill-tags">
-                            <span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span><span>SQL Server</span><span>Oracle</span>
-                        </div>
-                    </div>
-                    <div class="skill-category reveal-child">
-                        <h3><i class="fas fa-cloud"></i> DevOps & Tools</h3>
-                        <div class="skill-tags">
-                            <span>Docker</span><span>NGINX</span><span>IIS</span><span>Ubuntu</span><span>Git</span><span>CI/CD</span><span>Bash Scripting</span>
-                        </div>
-                    </div>
-                </div>
+      <!-- Technical Skills Section -->
+      <section
+        id="skills"
+        class="skills-section"
+        aria-labelledby="skills-title"
+      >
+        <div class="container">
+          <div class="section-header reveal">
+            <h2 id="skills-title">
+              Technical <span class="accent">Skills</span>
+            </h2>
+            <p>My toolkit for building high-performance systems.</p>
+          </div>
+          <div class="skills-grid reveal">
+            <div class="skill-category reveal-child">
+              <h3><i class="fas fa-code" aria-hidden="true"></i> Frontend</h3>
+              <div class="skill-tags">
+                <span>HTML/CSS</span><span>Bootstrap</span
+                ><span>JavaScript</span><span>jQuery</span><span>Vue.js</span
+                ><span>Nuxt.js</span><span>React.js</span><span>Next.js</span>
+              </div>
             </div>
-        </section>
+            <div class="skill-category reveal-child">
+              <h3><i class="fas fa-server" aria-hidden="true"></i> Backend</h3>
+              <div class="skill-tags">
+                <span>PHP</span><span>Laravel</span><span>Node.js</span
+                ><span>GraphQL</span><span>RESTful APIs</span
+                ><span>Socket.IO</span>
+              </div>
+            </div>
+            <div class="skill-category reveal-child">
+              <h3>
+                <i class="fas fa-database" aria-hidden="true"></i> Databases
+              </h3>
+              <div class="skill-tags">
+                <span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span
+                ><span>SQL Server</span><span>Oracle</span>
+              </div>
+            </div>
+            <div class="skill-category reveal-child">
+              <h3>
+                <i class="fas fa-cloud" aria-hidden="true"></i> DevOps & Tools
+              </h3>
+              <div class="skill-tags">
+                <span>Docker</span><span>NGINX</span><span>IIS</span
+                ><span>Ubuntu</span><span>Git</span><span>CI/CD</span
+                ><span>Bash Scripting</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="experience-section">
-            <div class="container">
-                <div class="section-header reveal">
-                    <h2>Professional <span class="accent">Experience</span></h2>
-                    <p>6+ years of growth and technical excellence.</p>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-item reveal">
-                        <span class="timeline-date">Jan 2024 - Present</span>
-                        <div class="timeline-content glass">
-                            <h3>DevOps Engineer</h3>
-                            <h4>Wakeb Data | Riyadh, Saudi Arabia</h4>
-                            <ul>
-                                <li>Designed and managed scalable deployment architecture using dual-server structure with load balancing.</li>
-                                <li>Implemented robust FTP servers for secure uploads and file management.</li>
-                                <li>Set up database replication and failover systems for high availability.</li>
-                                <li>Monitored performance and logs using Linux-based scripts and Docker containers.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item reveal">
-                        <span class="timeline-date">Oct 2021 - Jan 2024</span>
-                        <div class="timeline-content glass">
-                            <h3>Full Stack Developer</h3>
-                            <h4>Wakeb Data | Riyadh, Saudi Arabia</h4>
-                            <ul>
-                                <li>Developed complex dashboards with Vue.js and Laravel for data visualization.</li>
-                                <li>Built GIS solutions integrated with Google Maps for heatmap and polygon visualizations.</li>
-                                <li>Integrated AI-based modules for object detection and real-time camera streaming.</li>
-                                <li>Created custom role-based access systems with advanced permission logic.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item reveal">
-                        <span class="timeline-date">Nov 2020 - Sep 2021</span>
-                        <div class="timeline-content glass">
-                            <h3>Full Stack Developer</h3>
-                            <h4>Agylz | Cairo, Egypt (Remote)</h4>
-                            <ul>
-                                <li>Designed and implemented scalable microservices using Nuxt.js and GraphQL.</li>
-                                <li>Managed Docker containers, API gateways, and production environments via Dokku.</li>
-                                <li>Implemented automated deployments using Git hooks and NGINX.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item reveal">
-                        <span class="timeline-date">Oct 2018 - Nov 2020</span>
-                        <div class="timeline-content glass">
-                            <h3>Full Stack Developer</h3>
-                            <h4>Cloudx9 | Cairo, Egypt</h4>
-                            <ul>
-                                <li>Developed 7Keema platform integrating Paymob for secure payment gateways.</li>
-                                <li>Created geo-based services (e.g. MayDay, Pashakeem) using GPS logic.</li>
-                                <li>Built dashboards and reporting tools for Kashkool's book systems.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+      <!-- Experience Section -->
+      <section
+        id="experience"
+        class="experience-section"
+        aria-labelledby="experience-title"
+      >
+        <div class="container">
+          <div class="section-header reveal">
+            <h2 id="experience-title">
+              Professional <span class="accent">Experience</span>
+            </h2>
+            <p>6+ years of growth and technical excellence.</p>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item reveal">
+              <span class="timeline-date">Jan 2024 - Present</span>
+              <div class="timeline-content glass">
+                <h3>DevOps Engineer</h3>
+                <h4>Wakeb Data | Riyadh, Saudi Arabia</h4>
+                <ul>
+                  <li>
+                    Designed and managed scalable deployment architecture using
+                    dual-server structure with load balancing.
+                  </li>
+                  <li>
+                    Implemented robust FTP servers for secure uploads and file
+                    management.
+                  </li>
+                  <li>
+                    Set up database replication and failover systems for high
+                    availability.
+                  </li>
+                  <li>
+                    Monitored performance and logs using Linux-based scripts and
+                    Docker containers.
+                  </li>
+                </ul>
+              </div>
             </div>
-        </section>
+            <div class="timeline-item reveal">
+              <span class="timeline-date">Oct 2021 - Jan 2024</span>
+              <div class="timeline-content glass">
+                <h3>Full Stack Developer</h3>
+                <h4>Wakeb Data | Riyadh, Saudi Arabia</h4>
+                <ul>
+                  <li>
+                    Developed complex dashboards with Vue.js and Laravel for
+                    data visualization.
+                  </li>
+                  <li>
+                    Built GIS solutions integrated with Google Maps for heatmap
+                    and polygon visualizations.
+                  </li>
+                  <li>
+                    Integrated AI-based modules for object detection and
+                    real-time camera streaming.
+                  </li>
+                  <li>
+                    Created custom role-based access systems with advanced
+                    permission logic.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-item reveal">
+              <span class="timeline-date">Nov 2020 - Sep 2021</span>
+              <div class="timeline-content glass">
+                <h3>Full Stack Developer</h3>
+                <h4>Agylz | Cairo, Egypt (Remote)</h4>
+                <ul>
+                  <li>
+                    Designed and implemented scalable microservices using
+                    Nuxt.js and GraphQL.
+                  </li>
+                  <li>
+                    Managed Docker containers, API gateways, and production
+                    environments via Dokku.
+                  </li>
+                  <li>
+                    Implemented automated deployments using Git hooks and NGINX.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-item reveal">
+              <span class="timeline-date">Oct 2018 - Nov 2020</span>
+              <div class="timeline-content glass">
+                <h3>Full Stack Developer</h3>
+                <h4>Cloudx9 | Cairo, Egypt</h4>
+                <ul>
+                  <li>
+                    Developed 7Keema platform integrating Paymob for secure
+                    payment gateways.
+                  </li>
+                  <li>
+                    Created geo-based services (e.g. MayDay, Pashakeem) using
+                    GPS logic.
+                  </li>
+                  <li>
+                    Built dashboards and reporting tools for Kashkool's book
+                    systems.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects-section">
-            <div class="container">
-                <div class="section-header reveal">
-                    <h2>Key <span class="accent">Projects</span></h2>
-                    <p>Real-world solutions I've architected and delivered.</p>
-                </div>
-                <div class="projects-grid">
-                    <div class="project-card reveal glass">
-                        <div class="project-icon"><i class="fas fa-chart-line"></i></div>
-                        <h3>Report Builder Dashboard</h3>
-                        <p>Multi-source data visualization with aggregation and role-based access control for enterprise clients.</p>
-                        <div class="project-tags"><span>Laravel</span><span>Vue.js</span><span>SQL</span></div>
-                    </div>
-                    <div class="project-card reveal glass">
-                        <div class="project-icon"><i class="fas fa-robot"></i></div>
-                        <h3>Mujib WhatsApp Chatbot</h3>
-                        <p>Real-time user interaction and membership management system with automated response logic.</p>
-                        <div class="project-tags"><span>Node.js</span><span>Socket.IO</span><span>API</span></div>
-                    </div>
-                    <div class="project-card reveal glass">
-                        <div class="project-icon"><i class="fas fa-bolt"></i></div>
-                        <h3>Petromin Optimization</h3>
-                        <p>Enhanced dashboard performance and load times with advanced query optimization and Redis caching layer.</p>
-                        <div class="project-tags"><span>Redis</span><span>Indexing</span><span>Laravel</span></div>
-                    </div>
-                </div>
+      <!-- Projects Section -->
+      <section
+        id="projects"
+        class="projects-section"
+        aria-labelledby="projects-title"
+      >
+        <div class="container">
+          <div class="section-header reveal">
+            <h2 id="projects-title">
+              Key <span class="accent">Projects</span>
+            </h2>
+            <p>Real-world solutions I've architected and delivered.</p>
+          </div>
+          <div class="projects-grid">
+            <div class="project-card reveal glass">
+              <div class="project-icon">
+                <i class="fas fa-chart-line" aria-hidden="true"></i>
+              </div>
+              <h3>Report Builder Dashboard</h3>
+              <p>
+                Multi-source data visualization with aggregation and role-based
+                access control for enterprise clients.
+              </p>
+              <div class="project-tags">
+                <span>Laravel</span><span>Vue.js</span><span>SQL</span>
+              </div>
             </div>
-        </section>
+            <div class="project-card reveal glass">
+              <div class="project-icon">
+                <i class="fas fa-robot" aria-hidden="true"></i>
+              </div>
+              <h3>Mujib WhatsApp Chatbot</h3>
+              <p>
+                Real-time user interaction and membership management system with
+                automated response logic.
+              </p>
+              <div class="project-tags">
+                <span>Node.js</span><span>Socket.IO</span><span>API</span>
+              </div>
+            </div>
+            <div class="project-card reveal glass">
+              <div class="project-icon">
+                <i class="fas fa-bolt" aria-hidden="true"></i>
+              </div>
+              <h3>Petromin Optimization</h3>
+              <p>
+                Enhanced dashboard performance and load times with advanced
+                query optimization and Redis caching layer.
+              </p>
+              <div class="project-tags">
+                <span>Redis</span><span>Indexing</span><span>Laravel</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section">
-            <div class="container">
-                <div class="section-header reveal">
-                    <h2>Get In <span class="accent">Touch</span></h2>
-                    <p>Interested in working together? Drop me a message and I'll get back to you soon.</p>
-                </div>
-                <div class="contact-grid">
-                    <div class="contact-info reveal">
-                        <div class="contact-card glass">
-                            <i class="fas fa-envelope"></i>
-                            <h4>Email</h4>
-                            <p>eslam.ismail93@gmail.com</p>
-                        </div>
-                        <div class="contact-card glass">
-                            <i class="fas fa-phone"></i>
-                            <h4>Phone</h4>
-                            <p>+966 538423643</p>
-                        </div>
-                        <div class="contact-card glass">
-                            <i class="fab fa-linkedin"></i>
-                            <h4>LinkedIn</h4>
-                            <p>Eslam Mohamed Ismail</p>
-                        </div>
-                    </div>
-                    <form class="contact-form reveal glass" onsubmit="event.preventDefault(); alert('Message sent! (Mockup only)');">
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
-                    </form>
-                </div>
+      <!-- Contact Section -->
+      <section
+        id="contact"
+        class="contact-section"
+        aria-labelledby="contact-title"
+      >
+        <div class="container">
+          <div class="section-header reveal">
+            <h2 id="contact-title">Get In <span class="accent">Touch</span></h2>
+            <p>
+              Interested in working together? Drop me a message and I'll get
+              back to you soon.
+            </p>
+          </div>
+          <div class="contact-grid">
+            <div class="contact-info reveal">
+              <div class="contact-card glass">
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+                <h4>Email</h4>
+                <p>eslam.ismail93@gmail.com</p>
+              </div>
+              <div class="contact-card glass">
+                <i class="fas fa-phone" aria-hidden="true"></i>
+                <h4>Phone</h4>
+                <p>+966 538423643</p>
+              </div>
+              <div class="contact-card glass">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                <h4>LinkedIn</h4>
+                <p>Eslam Mohamed Ismail</p>
+              </div>
             </div>
-        </section>
+            <form
+              class="contact-form reveal glass"
+              onsubmit="
+                event.preventDefault();
+                alert('Message sent! (Mockup only)');
+              "
+              aria-label="Contact Form"
+            >
+              <div class="form-group">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  aria-label="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  aria-label="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  placeholder="Your Message"
+                  aria-label="Your Message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn-primary"
+                aria-label="Send Message"
+              >
+                Send Message
+                <i class="fas fa-paper-plane" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Eslam Mohamed Ismail. Built with precision and passion.</p>
-        </div>
+      <div class="container">
+        <p>
+          &copy; 2024 Eslam Mohamed Ismail. Built with precision and passion.
+        </p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

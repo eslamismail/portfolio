@@ -892,3 +892,112 @@ section {
         margin-top: 1rem;
     }
 }
+
+/* Print Styles for ATS & PDF Export */
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+        transition: none !important;
+        animation: none !important;
+    }
+
+    body {
+        background: #fff !important;
+        font-size: 11pt;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+    }
+
+    .glass-nav, .cursor-glow, .hero-visual, .nav-cta, .hero-btns, .shape-blob, .project-icon, .contact-form, .footer {
+        display: none !important;
+    }
+
+    .container {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 1cm !important;
+    }
+
+    section {
+        padding: 20px 0 !important;
+        page-break-inside: avoid;
+    }
+
+    .grid-hero, .grid-stats, .skills-grid, .projects-grid, .contact-grid {
+        display: block !important;
+    }
+
+    .accent {
+        background: none !important;
+        -webkit-text-fill-color: initial !important;
+        color: #000 !important;
+        font-weight: bold !important;
+    }
+
+    .timeline::before {
+        display: none !important;
+    }
+
+    .timeline-item {
+        padding-left: 0 !important;
+        margin-bottom: 20px !important;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 15px !important;
+    }
+
+    .timeline-item::after {
+        display: none !important;
+    }
+
+    .timeline-content {
+        padding: 0 !important;
+        background: transparent !important;
+        border: none !important;
+    }
+
+    .timeline-date {
+        font-weight: bold;
+        color: #000 !important;
+        margin-bottom: 5px;
+    }
+
+    .skill-category, .project-card, .contact-card {
+        padding: 10px 0 !important;
+        background: transparent !important;
+        border: none !important;
+        border-bottom: 1px solid #eee;
+    }
+
+    .skill-tags span {
+        border: none !important;
+        padding: 0 !important;
+        margin-right: 10px;
+    }
+
+    .skill-tags span::after {
+        content: ', ';
+    }
+
+    .skill-tags span:last-child::after {
+        content: '';
+    }
+
+    a {
+        text-decoration: underline !important;
+    }
+
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 90%;
+    }
+
+    .reveal, .reveal-child {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
