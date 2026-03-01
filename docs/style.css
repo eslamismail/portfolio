@@ -996,7 +996,7 @@ section {
     }
 
     a {
-        text-decoration: underline !important;
+        text-decoration: none !important;
     }
 
     a[href^="http"]:after {
