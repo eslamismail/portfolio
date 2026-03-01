@@ -7,21 +7,55 @@ document.addEventListener("DOMContentLoaded", () => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("active");
+
+          // Stagger children if they have reveal class
+          const staggeredChildren =
+            entry.target.querySelectorAll(".reveal-child");
+          staggeredChildren.forEach((child, index) => {
+            setTimeout(() => {
+              child.classList.add("active");
+            }, index * 100);
+          });
         }
       });
     },
-    { threshold: 0.1 },
+    { threshold: 0.15 },
   );
 
   reveals.forEach((reveal) => {
     revealObserver.observe(reveal);
   });
 
-  // Cursor Glow Effect
+  // Enhanced Cursor Glow Effect
   const cursorGlow = document.querySelector(".cursor-glow");
+  let mouseX = 0,
+    mouseY = 0;
+  let ballX = 0,
+    ballY = 0;
+  const speed = 0.1;
+
+  function animate() {
+    let distX = mouseX - ballX;
+    let distY = mouseY - ballY;
+
+    ballX = ballX + distX * speed;
+    ballY = ballY + distY * speed;
+
+    cursorGlow.style.left = ballX + "px";
+    cursorGlow.style.top = ballY + "px";
+
+    requestAnimationFrame(animate);
+  }
+  animate();
+
   document.addEventListener("mousemove", (e) => {
-    cursorGlow.style.left = e.clientX + "px";
-    cursorGlow.style.top = e.clientY + "px";
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    cursorGlow.style.opacity = "1";
+  });
+
+  document.addEventListener("mouseleave", () => {
+    cursorGlow.style.opacity = "0";
   });
 
   // Active Link Highlighting
@@ -33,14 +67,14 @@ document.addEventListener("DOMContentLoaded", () => {
     sections.forEach((section) => {
       const sectionTop = section.offsetTop;
       const sectionHeight = section.clientHeight;
-      if (pageYOffset >= sectionTop - 200) {
+      if (window.pageYOffset >= sectionTop - 200) {
         current = section.getAttribute("id");
       }
     });
 
     navLinks.forEach((link) => {
       link.classList.remove("active");
-      if (link.getAttribute("href").includes(current)) {
+      if (link.getAttribute("href") === `#${current}`) {
         link.classList.add("active");
       }
     });
